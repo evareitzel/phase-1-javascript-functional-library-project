@@ -130,7 +130,7 @@ function mySize(collection) {
 //   return arr[0]
 // }
  
-function myFirst(arr, len){
+function myFirst(arr, len = false){
   let newArr =[];
   if (len) {
   for (let i=0; i<len; i++) {
@@ -141,16 +141,7 @@ function myFirst(arr, len){
   return arr[0]}
   }
 
-// myLast
-// function myLast(array, [n]) {
-//   const lastArr = [];
-//   for (let i = array.length; i > 0; i--) {
-//     lastArr.push(array[i])
-//   }
-//   return lastArr;
-// }
-
-function myLast(arr, len) {
+function myLast(arr, len = false) {
   let newArr = [];
   if (len) {
     for (let i = arr.length - 1; i >= 0; i--) {
@@ -161,6 +152,15 @@ function myLast(arr, len) {
     return arr[0];
   }
 }
+
+// myLast
+// function myLast(array, [n]) {
+//   const lastArr = [];
+//   for (let i = array.length; i > 0; i--) {
+//     lastArr.push(array[i])
+//   }
+//   return lastArr;
+// }
 
 // mySortBy (bonus)
 // myFlatten (bonus)
